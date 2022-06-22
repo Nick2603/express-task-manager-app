@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest --watch"
+    "start": "set NODE_ENV=production&& node src/index.js",
+    "dev": "set NODE_ENV=development&& nodemon src/index.js",
+    "test": "set NODE_ENV=development&& jest --watch"
   },
   "jest": {
     "testEnvironment": "node"
