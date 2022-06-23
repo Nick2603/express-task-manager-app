@@ -6,7 +6,7 @@
   "scripts": {
     "start": "set NODE_ENV=prod&& node src/index.js",
     "dev": "set NODE_ENV=dev&& nodemon src/index.js",
-    "test": "set NODE_ENV=dev&& jest --watch"
+    "test": "set NODE_ENV=test&& jest --watch --detectOpenHandles --runInBand"
   },
   "jest": {
     "testEnvironment": "node"
